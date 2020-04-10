@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>No of treatments:</strong>
+  <%= @statistic.no_of_treatments %>
+</p>
+
+<p>
+  <strong>No of samples:</strong>
+  <%= @statistic.no_of_samples %>
+</p>
+
+<p>
+  <strong>Analytical type:</strong>
+  <%= @statistic.analytical_type %>
+</p>
+
+<div class="invoice-box">
+  <table cellpadding="0" cellspacing="0">
+    <!-- <tr class="heading">
+      <td>Item</td>
+      <td class="right">Price</td>
+      <td class="right">Qty</td>
+      <td>Total</td>
+    </tr> -->
+
+    <% @result_data.each do |statistic_items| %>
+      <tr>
+        <% statistic_items.each do |item| %>
+          <td>
+            <%= item %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<%= link_to 'Edit', edit_statistic_path(@statistic) %> |
+<%= link_to 'Back', statistics_path %>

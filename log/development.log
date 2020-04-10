@@ -1,0 +1,1751 @@
+Started GET "/" for ::1 at 2020-04-10 15:38:57 +0530
+  
+PG::ConnectionBad (fe_sendauth: no password supplied
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-10 15:40:03 +0530
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "invoizy_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (396.2ms)[0m  [1m[35mCREATE DATABASE "invoizy_development" ENCODING = 'unicode'[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "invoizy_development" ENCODING = 'unicode'[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (228.5ms)[0m  [1m[35mCREATE DATABASE "invoizy_test" ENCODING = 'unicode'[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/" for ::1 at 2020-04-10 15:41:45 +0530
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1714174838464250820)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateInvoices (20181030064006)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "invoices" ("id" bigserial primary key, "from_full_name" character varying, "from_address" character varying, "from_email" character varying, "from_phone" character varying, "to_full_name" character varying, "to_address" character varying, "to_email" character varying, "to_phone" character varying, "status" character varying, "discount" decimal, "vat" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181030064006_create_invoices.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181030064006"]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateInvoiceItems (20181030064522)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "invoice_items" ("id" bigserial primary key, "name" character varying, "description" character varying, "price" decimal, "qty" integer, "invoice_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_25bf3d2c5e"
+FOREIGN KEY ("invoice_id")
+  REFERENCES "invoices" ("id")
+)[0m
+  ↳ db/migrate/20181030064522_create_invoice_items.rb:3
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE  INDEX  "index_invoice_items_on_invoice_id" ON "invoice_items"  ("invoice_id")[0m
+  ↳ db/migrate/20181030064522_create_invoice_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181030064522"]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-10 10:12:00.270689"], ["updated_at", "2020-04-10 10:12:00.270689"]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1714174838464250820)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/" for ::1 at 2020-04-10 15:42:13 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.6ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 4004ms (Views: 3991.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 15:42:22 +0530
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.5ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 15:42:23 +0530
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.3ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 15:42:23 +0530
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mInvoice Load (0.7ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ db/seeds.rb:188
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.7ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Timothy I. Atwood"], ["from_address", "3402 Raver Croft Drive, Chattanooga, TN 37421"], ["from_email", "timothyiatwood@teleworm.us"], ["from_phone", "423-645-9346"], ["to_full_name", "Michelle J. Horton"], ["to_address", "2125 Green Hill Road, Springdale, AR 72764"], ["to_email", "michellejhorton@rhyta.com"], ["to_phone", "479-361-1375"], ["status", "sent"], ["discount", "12.83"], ["vat", "10.0"], ["created_at", "2020-04-10 10:12:43.944408"], ["updated_at", "2020-04-10 10:12:43.944408"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.8ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Capers - Ox Eye Daisy"], ["description", "Integrated asynchronous local area network"], ["price", "8.79"], ["qty", 2], ["invoice_id", 1], ["created_at", "2020-04-10 10:12:43.965695"], ["updated_at", "2020-04-10 10:12:43.965695"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Pork - Ham, Virginia"], ["description", "Automated optimizing policy"], ["price", "74.52"], ["qty", 7], ["invoice_id", 1], ["created_at", "2020-04-10 10:12:43.968717"], ["updated_at", "2020-04-10 10:12:43.968717"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Filter - Coffee"], ["description", "Up-sized actuating moratorium"], ["price", "33.75"], ["qty", 2], ["invoice_id", 1], ["created_at", "2020-04-10 10:12:43.970905"], ["updated_at", "2020-04-10 10:12:43.970905"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.5ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beans - Kidney White"], ["description", "Customizable background product"], ["price", "48.64"], ["qty", 2], ["invoice_id", 1], ["created_at", "2020-04-10 10:12:43.975134"], ["updated_at", "2020-04-10 10:12:43.975134"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beans - Kidney White"], ["description", "Customizable background product"], ["price", "48.64"], ["qty", 2], ["invoice_id", 1], ["created_at", "2020-04-10 10:12:43.977556"], ["updated_at", "2020-04-10 10:12:43.977556"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.4ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Michelle J. Horton"], ["from_address", "2125 Green Hill Road, Springdale, AR 72764"], ["from_email", "michellejhorton@rhyta.com"], ["from_phone", "479-361-1375"], ["to_full_name", "Sherry F. Maldonado"], ["to_address", "3058 Freedom Lane, Stockton, CA 95202"], ["to_email", "sherryfmaldonado@armyspy.com"], ["to_phone", "209-461-8106"], ["status", "sent"], ["discount", "10.74"], ["vat", "15.0"], ["created_at", "2020-04-10 10:12:43.979888"], ["updated_at", "2020-04-10 10:12:43.979888"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Filter - Coffee"], ["description", "Up-sized actuating moratorium"], ["price", "33.75"], ["qty", 2], ["invoice_id", 2], ["created_at", "2020-04-10 10:12:43.982539"], ["updated_at", "2020-04-10 10:12:43.982539"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Squash - Acorn"], ["description", "Down-sized zero administration productivity"], ["price", "35.54"], ["qty", 1], ["invoice_id", 2], ["created_at", "2020-04-10 10:12:43.986773"], ["updated_at", "2020-04-10 10:12:43.986773"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Vodka - Smirnoff"], ["description", "Object-based demand-driven conglomeration"], ["price", "13.77"], ["qty", 7], ["invoice_id", 2], ["created_at", "2020-04-10 10:12:43.989205"], ["updated_at", "2020-04-10 10:12:43.989205"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Capers - Ox Eye Daisy"], ["description", "Integrated asynchronous local area network"], ["price", "8.79"], ["qty", 2], ["invoice_id", 2], ["created_at", "2020-04-10 10:12:43.991484"], ["updated_at", "2020-04-10 10:12:43.991484"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Breadfruit"], ["description", "Inverse mission-critical circuit"], ["price", "66.78"], ["qty", 8], ["invoice_id", 2], ["created_at", "2020-04-10 10:12:43.993601"], ["updated_at", "2020-04-10 10:12:43.993601"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.4ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Effie L. Goode"], ["from_address", "3889 Dogwood Lane, Tucson, AZ 85710"], ["from_email", "effielgoode@rhyta.com"], ["from_phone", "520-731-5031"], ["to_full_name", "Effie L. Goode"], ["to_address", "3889 Dogwood Lane, Tucson, AZ 85710"], ["to_email", "effielgoode@rhyta.com"], ["to_phone", "520-731-5031"], ["status", "draft"], ["discount", "6.89"], ["vat", "5.0"], ["created_at", "2020-04-10 10:12:43.997770"], ["updated_at", "2020-04-10 10:12:43.997770"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Vodka - Smirnoff"], ["description", "Object-based demand-driven conglomeration"], ["price", "13.77"], ["qty", 7], ["invoice_id", 3], ["created_at", "2020-04-10 10:12:44.000391"], ["updated_at", "2020-04-10 10:12:44.000391"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Capers - Ox Eye Daisy"], ["description", "Integrated asynchronous local area network"], ["price", "8.79"], ["qty", 2], ["invoice_id", 3], ["created_at", "2020-04-10 10:12:44.002758"], ["updated_at", "2020-04-10 10:12:44.002758"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soupcontfoam16oz 116con"], ["description", "Customer-focused bandwidth-monitored architecture"], ["price", "22.27"], ["qty", 5], ["invoice_id", 3], ["created_at", "2020-04-10 10:12:44.005050"], ["updated_at", "2020-04-10 10:12:44.005050"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tomatoes"], ["description", "Expanded upward-trending paradigm"], ["price", "88.7"], ["qty", 5], ["invoice_id", 3], ["created_at", "2020-04-10 10:12:44.009360"], ["updated_at", "2020-04-10 10:12:44.009360"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.4ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Marc S. Irizarry"], ["from_address", "4514 Big Elm, Richmond, MO 64085"], ["from_email", "marcsirizarry@jourrapide.com"], ["from_phone", "816-776-0200"], ["to_full_name", "Effie L. Goode"], ["to_address", "3889 Dogwood Lane, Tucson, AZ 85710"], ["to_email", "effielgoode@rhyta.com"], ["to_phone", "520-731-5031"], ["status", "draft"], ["discount", "8.09"], ["vat", "20.0"], ["created_at", "2020-04-10 10:12:44.011864"], ["updated_at", "2020-04-10 10:12:44.011864"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nestea - Ice Tea, Diet"], ["description", "Team-oriented logistical policy"], ["price", "50.7"], ["qty", 8], ["invoice_id", 4], ["created_at", "2020-04-10 10:12:44.014353"], ["updated_at", "2020-04-10 10:12:44.014353"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soup - Knorr, Classic Can. Chili"], ["description", "Enhanced scalable conglomeration"], ["price", "9.9"], ["qty", 9], ["invoice_id", 4], ["created_at", "2020-04-10 10:12:44.016707"], ["updated_at", "2020-04-10 10:12:44.016707"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soup - Knorr, Classic Can. Chili"], ["description", "Enhanced scalable conglomeration"], ["price", "9.9"], ["qty", 9], ["invoice_id", 4], ["created_at", "2020-04-10 10:12:44.020841"], ["updated_at", "2020-04-10 10:12:44.020841"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.4ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Monique D. Estep"], ["from_address", "957 Hamill Avenue, San Diego, CA 92103"], ["from_email", "moniquedestep@dayrep.com"], ["from_phone", "858-360-1802"], ["to_full_name", "Monique D. Estep"], ["to_address", "957 Hamill Avenue, San Diego, CA 92103"], ["to_email", "moniquedestep@dayrep.com"], ["to_phone", "858-360-1802"], ["status", "sent"], ["discount", "10.04"], ["vat", "20.0"], ["created_at", "2020-04-10 10:12:44.023204"], ["updated_at", "2020-04-10 10:12:44.023204"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soupcontfoam16oz 116con"], ["description", "Customer-focused bandwidth-monitored architecture"], ["price", "22.27"], ["qty", 5], ["invoice_id", 5], ["created_at", "2020-04-10 10:12:44.025674"], ["updated_at", "2020-04-10 10:12:44.025674"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Vodka - Smirnoff"], ["description", "Object-based demand-driven conglomeration"], ["price", "13.77"], ["qty", 7], ["invoice_id", 5], ["created_at", "2020-04-10 10:12:44.028063"], ["updated_at", "2020-04-10 10:12:44.028063"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Breadfruit"], ["description", "Inverse mission-critical circuit"], ["price", "66.78"], ["qty", 8], ["invoice_id", 5], ["created_at", "2020-04-10 10:12:44.032930"], ["updated_at", "2020-04-10 10:12:44.032930"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Vodka - Smirnoff"], ["description", "Object-based demand-driven conglomeration"], ["price", "13.77"], ["qty", 7], ["invoice_id", 5], ["created_at", "2020-04-10 10:12:44.036395"], ["updated_at", "2020-04-10 10:12:44.036395"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.4ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Rachelle S. Vargas"], ["from_address", "974 Haymond Rocks Road, Scottsburg, OR 97473"], ["from_email", "rachellesvargas@dayrep.com"], ["from_phone", "541-587-6332"], ["to_full_name", "Rachelle S. Vargas"], ["to_address", "974 Haymond Rocks Road, Scottsburg, OR 97473"], ["to_email", "rachellesvargas@dayrep.com"], ["to_phone", "541-587-6332"], ["status", "draft"], ["discount", "5.06"], ["vat", "20.0"], ["created_at", "2020-04-10 10:12:44.039166"], ["updated_at", "2020-04-10 10:12:44.039166"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ice Cream - Life Savers"], ["description", "Cloned optimal benchmark"], ["price", "71.39"], ["qty", 1], ["invoice_id", 6], ["created_at", "2020-04-10 10:12:44.042245"], ["updated_at", "2020-04-10 10:12:44.042245"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Rachelle S. Vargas"], ["from_address", "974 Haymond Rocks Road, Scottsburg, OR 97473"], ["from_email", "rachellesvargas@dayrep.com"], ["from_phone", "541-587-6332"], ["to_full_name", "Wendy A. Collins"], ["to_address", "2824 Broadway Street, Charleston, SC 29405"], ["to_email", "wendyacollins@teleworm.us"], ["to_phone", "843-744-5410"], ["status", "draft"], ["discount", "19.11"], ["vat", "10.0"], ["created_at", "2020-04-10 10:12:44.046183"], ["updated_at", "2020-04-10 10:12:44.046183"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Squash - Acorn"], ["description", "Down-sized zero administration productivity"], ["price", "35.54"], ["qty", 1], ["invoice_id", 7], ["created_at", "2020-04-10 10:12:44.049266"], ["updated_at", "2020-04-10 10:12:44.049266"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beans - Kidney White"], ["description", "Customizable background product"], ["price", "48.64"], ["qty", 2], ["invoice_id", 7], ["created_at", "2020-04-10 10:12:44.052683"], ["updated_at", "2020-04-10 10:12:44.052683"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Gladys H. Sheffield"], ["from_address", "1626 Hidden Meadow Drive, Des Lacs, ND 58733"], ["from_email", "gladyshsheffield@rhyta.com"], ["from_phone", "701-725-9343"], ["to_full_name", "Marc S. Irizarry"], ["to_address", "4514 Big Elm, Richmond, MO 64085"], ["to_email", "marcsirizarry@jourrapide.com"], ["to_phone", "816-776-0200"], ["status", "sent"], ["discount", "1.77"], ["vat", "5.0"], ["created_at", "2020-04-10 10:12:44.063982"], ["updated_at", "2020-04-10 10:12:44.063982"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Carbonated Water - Cherry"], ["description", "Seamless transitional installation"], ["price", "34.83"], ["qty", 10], ["invoice_id", 8], ["created_at", "2020-04-10 10:12:44.069151"], ["updated_at", "2020-04-10 10:12:44.069151"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nestea - Ice Tea, Diet"], ["description", "Team-oriented logistical policy"], ["price", "50.7"], ["qty", 8], ["invoice_id", 8], ["created_at", "2020-04-10 10:12:44.072486"], ["updated_at", "2020-04-10 10:12:44.072486"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Pork - Ham, Virginia"], ["description", "Automated optimizing policy"], ["price", "74.52"], ["qty", 7], ["invoice_id", 8], ["created_at", "2020-04-10 10:12:44.074961"], ["updated_at", "2020-04-10 10:12:44.074961"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cheese - Gorgonzola"], ["description", "Stand-alone reciprocal architecture"], ["price", "23.66"], ["qty", 6], ["invoice_id", 8], ["created_at", "2020-04-10 10:12:44.077356"], ["updated_at", "2020-04-10 10:12:44.077356"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.2ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Effie L. Goode"], ["from_address", "3889 Dogwood Lane, Tucson, AZ 85710"], ["from_email", "effielgoode@rhyta.com"], ["from_phone", "520-731-5031"], ["to_full_name", "Monique D. Estep"], ["to_address", "957 Hamill Avenue, San Diego, CA 92103"], ["to_email", "moniquedestep@dayrep.com"], ["to_phone", "858-360-1802"], ["status", "paid"], ["discount", "17.76"], ["vat", "5.0"], ["created_at", "2020-04-10 10:12:44.081033"], ["updated_at", "2020-04-10 10:12:44.081033"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ice Cream - Life Savers"], ["description", "Cloned optimal benchmark"], ["price", "71.39"], ["qty", 1], ["invoice_id", 9], ["created_at", "2020-04-10 10:12:44.083633"], ["updated_at", "2020-04-10 10:12:44.083633"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sword Pick Asst"], ["description", "Switchable logistical protocol"], ["price", "21.87"], ["qty", 5], ["invoice_id", 9], ["created_at", "2020-04-10 10:12:44.086248"], ["updated_at", "2020-04-10 10:12:44.086248"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sword Pick Asst"], ["description", "Switchable logistical protocol"], ["price", "21.87"], ["qty", 5], ["invoice_id", 9], ["created_at", "2020-04-10 10:12:44.088831"], ["updated_at", "2020-04-10 10:12:44.088831"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tomatoes"], ["description", "Expanded upward-trending paradigm"], ["price", "88.7"], ["qty", 5], ["invoice_id", 9], ["created_at", "2020-04-10 10:12:44.092523"], ["updated_at", "2020-04-10 10:12:44.092523"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Capers - Ox Eye Daisy"], ["description", "Integrated asynchronous local area network"], ["price", "8.79"], ["qty", 2], ["invoice_id", 9], ["created_at", "2020-04-10 10:12:44.095331"], ["updated_at", "2020-04-10 10:12:44.095331"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Sherry F. Maldonado"], ["from_address", "3058 Freedom Lane, Stockton, CA 95202"], ["from_email", "sherryfmaldonado@armyspy.com"], ["from_phone", "209-461-8106"], ["to_full_name", "Gladys H. Sheffield"], ["to_address", "1626 Hidden Meadow Drive, Des Lacs, ND 58733"], ["to_email", "gladyshsheffield@rhyta.com"], ["to_phone", "701-725-9343"], ["status", "draft"], ["discount", "12.35"], ["vat", "10.0"], ["created_at", "2020-04-10 10:12:44.098108"], ["updated_at", "2020-04-10 10:12:44.098108"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cheese - Gorgonzola"], ["description", "Stand-alone reciprocal architecture"], ["price", "23.66"], ["qty", 6], ["invoice_id", 10], ["created_at", "2020-04-10 10:12:44.100980"], ["updated_at", "2020-04-10 10:12:44.100980"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+Started GET "/" for ::1 at 2020-04-10 15:42:47 +0530
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.5ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  [1m[36mInvoiceItem Load (0.6ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["invoice_id", 1], ["invoice_id", 2], ["invoice_id", 3], ["invoice_id", 4], ["invoice_id", 5], ["invoice_id", 6], ["invoice_id", 7], ["invoice_id", 8], ["invoice_id", 9], ["invoice_id", 10]]
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (74.8ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 89.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/invoices/1" for ::1 at 2020-04-10 15:42:49 +0530
+Processing by InvoicesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.6ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+  [1m[36mInvoiceItem Load (0.5ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = $1[0m  [["invoice_id", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+  Rendering invoices/show.html.erb within layouts/application
+  Rendered invoices/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE Invoice Load (0.0ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.5ms)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/invoices/1.pdf" for ::1 at 2020-04-10 15:42:51 +0530
+Processing by InvoicesController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.5ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+  [1m[36mInvoiceItem Load (0.3ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = $1[0m  [["invoice_id", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+***************WICKED***************
+  Rendering invoices/show.html.erb within layouts/pdf.html
+  Rendered invoices/show.html.erb within layouts/pdf.html (5.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Invoice No. 1.pdf (3.7ms)
+Completed 200 OK in 922ms (Views: 3.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 15:43:03 +0530
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (1.1ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  [1m[36mInvoiceItem Load (1.1ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["invoice_id", 1], ["invoice_id", 2], ["invoice_id", 3], ["invoice_id", 4], ["invoice_id", 5], ["invoice_id", 6], ["invoice_id", 7], ["invoice_id", 8], ["invoice_id", 9], ["invoice_id", 10]]
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (12.8ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 15:45:23 +0530
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.3ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["invoice_id", 1], ["invoice_id", 2], ["invoice_id", 3], ["invoice_id", 4], ["invoice_id", 5], ["invoice_id", 6], ["invoice_id", 7], ["invoice_id", 8], ["invoice_id", 9], ["invoice_id", 10]]
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1714174838464250820)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateStatistics (20200410101849)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "statistics" ("id" bigserial primary key, "no_of_treatments" integer, "no_of_samples" integer, "analytical_type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200410101849_create_statistics.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200410101849"]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1714174838464250820)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1714174838464250820)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateActiveStorageTables (20200410102241)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200410102241_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200410102241_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200410102241_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200410102241_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200410102241_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200410102241"]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1714174838464250820)[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/" for ::1 at 2020-04-10 15:55:34 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.6ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  [1m[36mInvoiceItem Load (1.0ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["invoice_id", 1], ["invoice_id", 2], ["invoice_id", 3], ["invoice_id", 4], ["invoice_id", 5], ["invoice_id", 6], ["invoice_id", 7], ["invoice_id", 8], ["invoice_id", 9], ["invoice_id", 10]]
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (44.2ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 260ms (Views: 245.8ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/statistics" for ::1 at 2020-04-10 16:01:15 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.7ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 30.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/statistics/new" for ::1 at 2020-04-10 16:01:17 +0530
+Processing by StatisticsController#new as HTML
+  Rendering statistics/new.html.erb within layouts/application
+  Rendered statistics/_form.html.erb (15.1ms)
+  Rendered statistics/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `excel' for #<Statistic:0x00007faeb47cbec8>):
+    28: 
+    29:   <div class="field">
+    30:     <%= form.label :excel %>
+    31:     <% if statistic.excel.attached? %>
+    32:       <%= statistic.excel.filename %><br/>
+    33:       <small><%= link_to 'Remove excel', statistic_delete_excel_attachment_path(statistic),
+    34:       method: :delete, data: { confirm: 'Are you sure?' } %></small><br/>
+  
+app/views/statistics/_form.html.erb:31:in `block in _app_views_statistics__form_html_erb___678505927591548729_70194164421160'
+app/views/statistics/_form.html.erb:1:in `_app_views_statistics__form_html_erb___678505927591548729_70194164421160'
+app/views/statistics/new.html.erb:3:in `_app_views_statistics_new_html_erb__2450368569886279229_70194164444160'
+Started GET "/statistics/new" for ::1 at 2020-04-10 16:02:00 +0530
+Processing by StatisticsController#new as HTML
+  Rendering statistics/new.html.erb within layouts/application
+  Rendered statistics/_form.html.erb (14.5ms)
+  Rendered statistics/new.html.erb within layouts/application (15.4ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/statistics" for ::1 at 2020-04-10 16:02:15 +0530
+Processing by StatisticsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QRBX9IT/ph+83X5pZqeZRGLrMGgyUmlcJSf1aMeYeXUYtZf5Rb4YzZ3crq5A7BuIin+cp0u0bT0drqhstrT3Rg==", "statistic"=>{"no_of_treatments"=>"2", "no_of_samples"=>"3", "analytical_type"=>"sum", "excel_file"=>#<ActionDispatch::Http::UploadedFile:0x00007faee2bf4530 @tempfile=#<Tempfile:/tmp/RackMultipart20200410-23374-6qmppb.xlsx>, @original_filename="statistics_excel.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"statistic[excel_file]\"; filename=\"statistics_excel.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"Create Statistic"}
+[36m  Disk Storage (0.8ms) [0m[32mUploaded file to key: nAtnYL3fRCJ8MvgG6z7SLioj (checksum: Pi2JWj8qo1UDjvMbsdkg1w==)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:27
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "nAtnYL3fRCJ8MvgG6z7SLioj"], ["filename", "statistics_excel.xlsx"], ["content_type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"], ["metadata", "{\"identified\":true}"], ["byte_size", 4492], ["checksum", "Pi2JWj8qo1UDjvMbsdkg1w=="], ["created_at", "2020-04-10 10:32:15.828097"]]
+  ↳ app/controllers/statistics_controller.rb:27
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:30
+  [1m[36mStatistic Create (0.3ms)[0m  [1m[32mINSERT INTO "statistics" ("no_of_treatments", "no_of_samples", "analytical_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["no_of_treatments", 2], ["no_of_samples", 3], ["analytical_type", "sum"], ["created_at", "2020-04-10 10:32:15.838539"], ["updated_at", "2020-04-10 10:32:15.838539"]]
+  ↳ app/controllers/statistics_controller.rb:30
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "excel_file"], ["record_type", "Statistic"], ["record_id", 1], ["blob_id", 1], ["created_at", "2020-04-10 10:32:15.840447"]]
+  ↳ app/controllers/statistics_controller.rb:30
+  [1m[36mStatistic Update (0.3ms)[0m  [1m[33mUPDATE "statistics" SET "updated_at" = $1 WHERE "statistics"."id" = $2[0m  [["updated_at", "2020-04-10 10:32:15.841871"], ["id", 1]]
+  ↳ app/controllers/statistics_controller.rb:30
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:30
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 51acde95-1170-4633-af3a-21f123130530) to Async(default) with arguments: #<GlobalID:0x00007faee35bf998 @uri=#<URI::GID gid://invoizy/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/statistics/1
+Completed 302 Found in 84ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:02:15 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:83
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530] Performing ActiveStorage::AnalyzeJob (Job ID: 51acde95-1170-4633-af3a-21f123130530) from Async(default) with arguments: #<GlobalID:0x00007faeb45b6c78 @uri=#<URI::GID gid://invoizy/ActiveStorage::Blob/1>>
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.8ms)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530]   [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530]   [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [51acde95-1170-4633-af3a-21f123130530] Performed ActiveStorage::AnalyzeJob (Job ID: 51acde95-1170-4633-af3a-21f123130530) from Async(default) in 7.31ms
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (20.5ms)
+Completed 200 OK in 56ms (Views: 45.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/statistics" for ::1 at 2020-04-10 16:02:19 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:06:10 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.6ms)
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (16.0ms)
+Completed 200 OK in 53ms (Views: 34.4ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/statistics" for ::1 at 2020-04-10 16:07:06 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:08:34 +0530
+Processing by InvoicesController#index as HTML
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ app/views/invoices/index.html.erb:15
+  [1m[36mInvoiceItem Load (1.0ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["invoice_id", 1], ["invoice_id", 2], ["invoice_id", 3], ["invoice_id", 4], ["invoice_id", 5], ["invoice_id", 6], ["invoice_id", 7], ["invoice_id", 8], ["invoice_id", 9], ["invoice_id", 10]]
+  ↳ app/views/invoices/index.html.erb:15
+  Rendered invoices/index.html.erb within layouts/application (23.1ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 40.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/invoices/1" for ::1 at 2020-04-10 16:08:36 +0530
+Processing by InvoicesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.5ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = $1[0m  [["invoice_id", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+  Rendering invoices/show.html.erb within layouts/application
+  Rendered invoices/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE Invoice Load (0.0ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.2ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/statistics" for ::1 at 2020-04-10 16:20:31 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.6ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 968ms (Views: 955.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/statistics/1/result_excel_analysis" for ::1 at 2020-04-10 16:20:38 +0530
+Processing by StatisticsController#result_excel_analysis as HTML
+  Parameters: {"statistic_id"=>"1"}
+  [1m[36mStatistic Load (0.2ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:87
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `abc' for #<Statistic:0x00007efe930a4ae0>):
+  
+app/controllers/statistics_controller.rb:88:in `result_excel_analysis'
+Started GET "/statistics" for ::1 at 2020-04-10 16:21:24 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/statistics" for ::1 at 2020-04-10 16:21:25 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:21:36 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ (pry):3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):3
+Completed 500 Internal Server Error in 436734ms (ActiveRecord: 9.4ms)
+
+
+  
+IOError (file ./new_prices.xlsx does not exist):
+  
+app/models/statistic.rb:12:in `new'
+app/models/statistic.rb:12:in `excel_calculation_part'
+app/controllers/statistics_controller.rb:14:in `show'
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:28:58 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.2ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mStatistic Load (0.5ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 11.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Statistic:0x00000000042fe0c8>):
+    24:       <td>Total</td>
+    25:     </tr>
+    26: 
+    27:     <% @statistic.each do |statistic_item| %>
+    28:       <tr class="item">
+    29:         <td>
+    30:           <%= statistic_item %>
+  
+app/views/statistics/show.html.erb:27:in `_app_views_statistics_show_html_erb__3310728916169993397_69846675622160'
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:29:27 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    24:       <td>Total</td>
+    25:     </tr>
+    26: 
+    27:     <% @result.each do |statistic_item| %>
+    28:       <tr class="item">
+    29:         <td>
+    30:           <%= statistic_item %>
+  
+app/views/statistics/show.html.erb:27:in `_app_views_statistics_show_html_erb__3310728916169993397_69846705121800'
+Started GET "/statistics/" for ::1 at 2020-04-10 16:29:36 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 794ms (Views: 791.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:29:40 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    24:       <td>Total</td>
+    25:     </tr>
+    26: 
+    27:     <% @result.each do |statistic_item| %>
+    28:       <tr class="item">
+    29:         <td>
+    30:           <%= statistic_item %>
+  
+app/views/statistics/show.html.erb:27:in `_app_views_statistics_show_html_erb__3310728916169993397_69846721276880'
+Started PUT "/__web_console/repl_sessions/5ae5bcc300442af28f581156ec398c65" for ::1 at 2020-04-10 16:29:46 +0530
+Started PUT "/__web_console/repl_sessions/5ae5bcc300442af28f581156ec398c65" for ::1 at 2020-04-10 16:29:46 +0530
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:30:02 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.5ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.8ms)
+  [1m[36mInvoice Load (0.2ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (15.4ms)
+Completed 200 OK in 54ms (Views: 40.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:31:13 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.7ms)
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.5ms)
+Completed 200 OK in 32ms (Views: 21.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:31:38 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.4ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.8ms)
+  [1m[36mInvoice Load (0.4ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.7ms)
+Completed 200 OK in 33ms (Views: 23.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:32:22 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.7ms)
+  [1m[36mInvoice Load (1.1ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (2.5ms)
+Completed 200 OK in 38ms (Views: 22.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/invoices/1.pdf" for ::1 at 2020-04-10 16:32:33 +0530
+Processing by InvoicesController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mInvoice Load (0.3ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+  [1m[36mInvoiceItem Load (0.4ms)[0m  [1m[34mSELECT "invoice_items".* FROM "invoice_items" WHERE "invoice_items"."invoice_id" = $1[0m  [["invoice_id", 1]]
+  ↳ app/controllers/invoices_controller.rb:7
+***************WICKED***************
+  Rendering invoices/show.html.erb within layouts/pdf.html
+  Rendered invoices/show.html.erb within layouts/pdf.html (7.2ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Invoice No. 1.pdf (0.7ms)
+Completed 200 OK in 948ms (Views: 0.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:34:30 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.5ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.7ms)
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.1ms)
+Completed 200 OK in 39ms (Views: 23.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/statistics/1.pdf" for ::1 at 2020-04-10 16:34:33 +0530
+Processing by StatisticsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.2ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (undefined local variable or method `statistic' for #<StatisticsController:0x00007f0ce92a3800>
+Did you mean?  @statistic):
+  
+app/controllers/statistics_controller.rb:18:in `block (2 levels) in show'
+app/controllers/statistics_controller.rb:15:in `show'
+Started PUT "/__web_console/repl_sessions/69497a53572457aaf17c80fa6d59d2b6" for ::1 at 2020-04-10 16:34:51 +0530
+Started PUT "/__web_console/repl_sessions/69497a53572457aaf17c80fa6d59d2b6" for ::1 at 2020-04-10 16:34:53 +0530
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:35:11 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.2ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.7ms)
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.1ms)
+Completed 200 OK in 68ms (Views: 23.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/statistics/1.pdf" for ::1 at 2020-04-10 16:35:12 +0530
+Processing by StatisticsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.2ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+***************WICKED***************
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::MissingTemplate (Missing template statistic/show.html.erb with {:locale=>[:en], :formats=>[:pdf], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/coppernine01/projects/my_personal_apps/rails-generate-pdf/app/views"
+):
+  
+app/controllers/statistics_controller.rb:18:in `block (2 levels) in show'
+app/controllers/statistics_controller.rb:15:in `show'
+Started PUT "/__web_console/repl_sessions/a682fb329007b35be5b8384dd1cab535" for ::1 at 2020-04-10 16:35:20 +0530
+Started PUT "/__web_console/repl_sessions/a682fb329007b35be5b8384dd1cab535" for ::1 at 2020-04-10 16:35:20 +0530
+Started GET "/statistics/1.pdf" for ::1 at 2020-04-10 16:36:29 +0530
+Processing by StatisticsController#show as PDF
+  Parameters: {"id"=>"1"}
+  [1m[36mStatistic Load (0.1ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+***************WICKED***************
+  Rendering statistics/show.html.erb within layouts/pdf.html
+  Rendered statistics/show.html.erb within layouts/pdf.html (0.8ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Invoice No. 1.pdf (0.8ms)
+Completed 200 OK in 859ms (Views: 0.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/statistics/" for ::1 at 2020-04-10 16:36:41 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/statistics/new" for ::1 at 2020-04-10 16:37:28 +0530
+Processing by StatisticsController#new as HTML
+  Rendering statistics/new.html.erb within layouts/application
+  Rendered statistics/_form.html.erb (10.3ms)
+  Rendered statistics/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/statistics" for ::1 at 2020-04-10 16:37:41 +0530
+Processing by StatisticsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CqiY+3muMDWIS5rY/r8ztrUE5EsLRjeY7HPAW+vFCOLWfLaNf3F11mHND5skyZDuSsSXY0qjFGTGjE3DdpV4Fg==", "statistic"=>{"no_of_treatments"=>"5", "no_of_samples"=>"6", "analytical_type"=>"sum", "excel_file"=>#<ActionDispatch::Http::UploadedFile:0x00007f0ce9a3fb68 @tempfile=#<Tempfile:/tmp/RackMultipart20200410-25897-12xbuok.xlsx>, @original_filename="statistics_excel.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"statistic[excel_file]\"; filename=\"statistics_excel.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"Create Statistic"}
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: Cib9Wr945LVocoqvDpVu7tMc (checksum: Pi2JWj8qo1UDjvMbsdkg1w==)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "Cib9Wr945LVocoqvDpVu7tMc"], ["filename", "statistics_excel.xlsx"], ["content_type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"], ["metadata", "{\"identified\":true}"], ["byte_size", 4492], ["checksum", "Pi2JWj8qo1UDjvMbsdkg1w=="], ["created_at", "2020-04-10 11:07:41.339085"]]
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[36mStatistic Create (0.2ms)[0m  [1m[32mINSERT INTO "statistics" ("no_of_treatments", "no_of_samples", "analytical_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["no_of_treatments", 5], ["no_of_samples", 6], ["analytical_type", "sum"], ["created_at", "2020-04-10 11:07:41.342597"], ["updated_at", "2020-04-10 11:07:41.342597"]]
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "excel_file"], ["record_type", "Statistic"], ["record_id", 2], ["blob_id", 2], ["created_at", "2020-04-10 11:07:41.343963"]]
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[36mStatistic Update (0.2ms)[0m  [1m[33mUPDATE "statistics" SET "updated_at" = $1 WHERE "statistics"."id" = $2[0m  [["updated_at", "2020-04-10 11:07:41.345012"], ["id", 2]]
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:45
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81) to Async(default) with arguments: #<GlobalID:0x00007f0ce989fb00 @uri=#<URI::GID gid://invoizy/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/statistics/2
+Completed 302 Found in 25ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/statistics/2" for ::1 at 2020-04-10 16:37:41 +0530
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStatistic Load (1.1ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81] Performing ActiveStorage::AnalyzeJob (Job ID: 98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81) from Async(default) with arguments: #<GlobalID:0x00007f0ce9750a10 @uri=#<URI::GID gid://invoizy/ActiveStorage::Blob/2>>
+  ↳ app/models/statistic.rb:8
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81]   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  ↳ app/models/statistic.rb:8
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81]   [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81] Performed ActiveStorage::AnalyzeJob (Job ID: 98dc61eb-bbe9-4c4b-8782-5c6f8c99cd81) from Async(default) in 5.9ms
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.1ms)
+Completed 200 OK in 36ms (Views: 23.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/statistics/2.pdf" for ::1 at 2020-04-10 16:38:13 +0530
+Processing by StatisticsController#show as PDF
+  Parameters: {"id"=>"2"}
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+***************WICKED***************
+  Rendering statistics/show.html.erb within layouts/pdf.html
+  Rendered statistics/show.html.erb within layouts/pdf.html (0.7ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data Invoice No. 2.pdf (0.8ms)
+Completed 200 OK in 841ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statistics/new" for ::1 at 2020-04-10 16:46:36 +0530
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "statistic_analysis_pjtsau_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/8981c5d05b81ddc1e8b6b6b7ba7c600c" for ::1 at 2020-04-10 16:47:51 +0530
+Started PUT "/__web_console/repl_sessions/8981c5d05b81ddc1e8b6b6b7ba7c600c" for ::1 at 2020-04-10 16:47:59 +0530
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "statistic_analysis_pjtsau_development"[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "statistic_analysis_pjtsau_test"[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (232.8ms)[0m  [1m[35mCREATE DATABASE "statistic_analysis_pjtsau_development" ENCODING = 'unicode'[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (232.6ms)[0m  [1m[35mCREATE DATABASE "statistic_analysis_pjtsau_test" ENCODING = 'unicode'[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "invoice_items" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "invoice_items" ("id" bigserial primary key, "name" character varying, "description" character varying, "price" decimal, "qty" integer, "invoice_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_invoice_items_on_invoice_id" ON "invoice_items"  ("invoice_id")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "invoices" CASCADE[0m
+  ↳ db/schema.rb:50
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "invoices" ("id" bigserial primary key, "from_full_name" character varying, "from_address" character varying, "from_email" character varying, "from_phone" character varying, "to_full_name" character varying, "to_address" character varying, "to_email" character varying, "to_phone" character varying, "status" character varying, "discount" decimal, "vat" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "statistics" CASCADE[0m
+  ↳ db/schema.rb:66
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "statistics" ("id" bigserial primary key, "no_of_treatments" integer, "no_of_samples" integer, "analytical_type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:66
+  [1m[35m (4.2ms)[0m  [1m[35mALTER TABLE "invoice_items" ADD CONSTRAINT "fk_rails_25bf3d2c5e"
+FOREIGN KEY ("invoice_id")
+  REFERENCES "invoices" ("id")
+[0m
+  ↳ db/schema.rb:74
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200410102241)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20181030064522),
+(20200410101849),
+(20181030064006);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-10 11:18:22.356434"], ["updated_at", "2020-04-10 11:18:22.356434"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "invoice_items" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "invoice_items" ("id" bigserial primary key, "name" character varying, "description" character varying, "price" decimal, "qty" integer, "invoice_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE  INDEX  "index_invoice_items_on_invoice_id" ON "invoice_items"  ("invoice_id")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "invoices" CASCADE[0m
+  ↳ db/schema.rb:50
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "invoices" ("id" bigserial primary key, "from_full_name" character varying, "from_address" character varying, "from_email" character varying, "from_phone" character varying, "to_full_name" character varying, "to_address" character varying, "to_email" character varying, "to_phone" character varying, "status" character varying, "discount" decimal, "vat" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:50
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "statistics" CASCADE[0m
+  ↳ db/schema.rb:66
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "statistics" ("id" bigserial primary key, "no_of_treatments" integer, "no_of_samples" integer, "analytical_type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:66
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "invoice_items" ADD CONSTRAINT "fk_rails_25bf3d2c5e"
+FOREIGN KEY ("invoice_id")
+  REFERENCES "invoices" ("id")
+[0m
+  ↳ db/schema.rb:74
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200410102241)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20181030064522),
+(20200410101849),
+(20181030064006);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-10 11:18:22.502229"], ["updated_at", "2020-04-10 11:18:22.502229"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-04-10 11:18:22.508571"], ["key", "environment"]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mInvoice Load (0.5ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices"[0m
+  ↳ db/seeds.rb:188
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.6ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Marc S. Irizarry"], ["from_address", "4514 Big Elm, Richmond, MO 64085"], ["from_email", "marcsirizarry@jourrapide.com"], ["from_phone", "816-776-0200"], ["to_full_name", "Michelle J. Horton"], ["to_address", "2125 Green Hill Road, Springdale, AR 72764"], ["to_email", "michellejhorton@rhyta.com"], ["to_phone", "479-361-1375"], ["status", "draft"], ["discount", "15.9"], ["vat", "10.0"], ["created_at", "2020-04-10 11:18:22.563420"], ["updated_at", "2020-04-10 11:18:22.563420"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (1.0ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nestea - Ice Tea, Diet"], ["description", "Team-oriented logistical policy"], ["price", "50.7"], ["qty", 8], ["invoice_id", 1], ["created_at", "2020-04-10 11:18:22.589976"], ["updated_at", "2020-04-10 11:18:22.589976"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.4ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Gladys H. Sheffield"], ["from_address", "1626 Hidden Meadow Drive, Des Lacs, ND 58733"], ["from_email", "gladyshsheffield@rhyta.com"], ["from_phone", "701-725-9343"], ["to_full_name", "Marc S. Irizarry"], ["to_address", "4514 Big Elm, Richmond, MO 64085"], ["to_email", "marcsirizarry@jourrapide.com"], ["to_phone", "816-776-0200"], ["status", "draft"], ["discount", "4.11"], ["vat", "15.0"], ["created_at", "2020-04-10 11:18:22.595310"], ["updated_at", "2020-04-10 11:18:22.595310"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Breadfruit"], ["description", "Inverse mission-critical circuit"], ["price", "66.78"], ["qty", 8], ["invoice_id", 2], ["created_at", "2020-04-10 11:18:22.599047"], ["updated_at", "2020-04-10 11:18:22.599047"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Carbonated Water - Cherry"], ["description", "Seamless transitional installation"], ["price", "34.83"], ["qty", 10], ["invoice_id", 2], ["created_at", "2020-04-10 11:18:22.602912"], ["updated_at", "2020-04-10 11:18:22.602912"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Squash - Acorn"], ["description", "Down-sized zero administration productivity"], ["price", "35.54"], ["qty", 1], ["invoice_id", 2], ["created_at", "2020-04-10 11:18:22.605187"], ["updated_at", "2020-04-10 11:18:22.605187"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beans - Kidney White"], ["description", "Customizable background product"], ["price", "48.64"], ["qty", 2], ["invoice_id", 2], ["created_at", "2020-04-10 11:18:22.607536"], ["updated_at", "2020-04-10 11:18:22.607536"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Monique D. Estep"], ["from_address", "957 Hamill Avenue, San Diego, CA 92103"], ["from_email", "moniquedestep@dayrep.com"], ["from_phone", "858-360-1802"], ["to_full_name", "Monique D. Estep"], ["to_address", "957 Hamill Avenue, San Diego, CA 92103"], ["to_email", "moniquedestep@dayrep.com"], ["to_phone", "858-360-1802"], ["status", "draft"], ["discount", "8.31"], ["vat", "20.0"], ["created_at", "2020-04-10 11:18:22.609921"], ["updated_at", "2020-04-10 11:18:22.609921"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ice Cream - Life Savers"], ["description", "Cloned optimal benchmark"], ["price", "71.39"], ["qty", 1], ["invoice_id", 3], ["created_at", "2020-04-10 11:18:22.613917"], ["updated_at", "2020-04-10 11:18:22.613917"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Carbonated Water - Cherry"], ["description", "Seamless transitional installation"], ["price", "34.83"], ["qty", 10], ["invoice_id", 3], ["created_at", "2020-04-10 11:18:22.616770"], ["updated_at", "2020-04-10 11:18:22.616770"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sword Pick Asst"], ["description", "Switchable logistical protocol"], ["price", "21.87"], ["qty", 5], ["invoice_id", 3], ["created_at", "2020-04-10 11:18:22.619511"], ["updated_at", "2020-04-10 11:18:22.619511"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Pork - Hock And Feet Attached"], ["description", "Programmable contextually-based local area network"], ["price", "39.17"], ["qty", 10], ["invoice_id", 3], ["created_at", "2020-04-10 11:18:22.623082"], ["updated_at", "2020-04-10 11:18:22.623082"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Marc S. Irizarry"], ["from_address", "4514 Big Elm, Richmond, MO 64085"], ["from_email", "marcsirizarry@jourrapide.com"], ["from_phone", "816-776-0200"], ["to_full_name", "Marc S. Irizarry"], ["to_address", "4514 Big Elm, Richmond, MO 64085"], ["to_email", "marcsirizarry@jourrapide.com"], ["to_phone", "816-776-0200"], ["status", "paid"], ["discount", "17.8"], ["vat", "10.0"], ["created_at", "2020-04-10 11:18:22.627019"], ["updated_at", "2020-04-10 11:18:22.627019"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soup - Knorr, Classic Can. Chili"], ["description", "Enhanced scalable conglomeration"], ["price", "9.9"], ["qty", 9], ["invoice_id", 4], ["created_at", "2020-04-10 11:18:22.629890"], ["updated_at", "2020-04-10 11:18:22.629890"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tea - Lemon Green Tea"], ["description", "Advanced background emulation"], ["price", "22.13"], ["qty", 7], ["invoice_id", 4], ["created_at", "2020-04-10 11:18:22.632682"], ["updated_at", "2020-04-10 11:18:22.632682"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Pork - Hock And Feet Attached"], ["description", "Programmable contextually-based local area network"], ["price", "39.17"], ["qty", 10], ["invoice_id", 4], ["created_at", "2020-04-10 11:18:22.635228"], ["updated_at", "2020-04-10 11:18:22.635228"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bread - Pita"], ["description", "Automated tangible system engine"], ["price", "34.94"], ["qty", 2], ["invoice_id", 4], ["created_at", "2020-04-10 11:18:22.638960"], ["updated_at", "2020-04-10 11:18:22.638960"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Earl A. Gott"], ["from_address", "1923 Stiles Street, Pittsburgh, PA 15226"], ["from_email", "earlagott@rhyta.com"], ["from_phone", "412-571-8270"], ["to_full_name", "Earl A. Gott"], ["to_address", "1923 Stiles Street, Pittsburgh, PA 15226"], ["to_email", "earlagott@rhyta.com"], ["to_phone", "412-571-8270"], ["status", "draft"], ["discount", "0.69"], ["vat", "10.0"], ["created_at", "2020-04-10 11:18:22.641494"], ["updated_at", "2020-04-10 11:18:22.641494"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soupcontfoam16oz 116con"], ["description", "Customer-focused bandwidth-monitored architecture"], ["price", "22.27"], ["qty", 5], ["invoice_id", 5], ["created_at", "2020-04-10 11:18:22.644201"], ["updated_at", "2020-04-10 11:18:22.644201"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Oil - Truffle, Black"], ["description", "Robust contextually-based Graphical User Interface"], ["price", "75.6"], ["qty", 1], ["invoice_id", 5], ["created_at", "2020-04-10 11:18:22.646731"], ["updated_at", "2020-04-10 11:18:22.646731"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sword Pick Asst"], ["description", "Switchable logistical protocol"], ["price", "21.87"], ["qty", 5], ["invoice_id", 5], ["created_at", "2020-04-10 11:18:22.650607"], ["updated_at", "2020-04-10 11:18:22.650607"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Marc S. Irizarry"], ["from_address", "4514 Big Elm, Richmond, MO 64085"], ["from_email", "marcsirizarry@jourrapide.com"], ["from_phone", "816-776-0200"], ["to_full_name", "Marc S. Irizarry"], ["to_address", "4514 Big Elm, Richmond, MO 64085"], ["to_email", "marcsirizarry@jourrapide.com"], ["to_phone", "816-776-0200"], ["status", "draft"], ["discount", "19.39"], ["vat", "5.0"], ["created_at", "2020-04-10 11:18:22.653344"], ["updated_at", "2020-04-10 11:18:22.653344"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tomatoes"], ["description", "Expanded upward-trending paradigm"], ["price", "88.7"], ["qty", 5], ["invoice_id", 6], ["created_at", "2020-04-10 11:18:22.656394"], ["updated_at", "2020-04-10 11:18:22.656394"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beans - Black Bean, Canned"], ["description", "Cross-group static challenge"], ["price", "71.19"], ["qty", 5], ["invoice_id", 6], ["created_at", "2020-04-10 11:18:22.659170"], ["updated_at", "2020-04-10 11:18:22.659170"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.4ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Earl A. Gott"], ["from_address", "1923 Stiles Street, Pittsburgh, PA 15226"], ["from_email", "earlagott@rhyta.com"], ["from_phone", "412-571-8270"], ["to_full_name", "Effie L. Goode"], ["to_address", "3889 Dogwood Lane, Tucson, AZ 85710"], ["to_email", "effielgoode@rhyta.com"], ["to_phone", "520-731-5031"], ["status", "paid"], ["discount", "3.71"], ["vat", "20.0"], ["created_at", "2020-04-10 11:18:22.663435"], ["updated_at", "2020-04-10 11:18:22.663435"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Oil - Truffle, Black"], ["description", "Robust contextually-based Graphical User Interface"], ["price", "75.6"], ["qty", 1], ["invoice_id", 7], ["created_at", "2020-04-10 11:18:22.666516"], ["updated_at", "2020-04-10 11:18:22.666516"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Monique D. Estep"], ["from_address", "957 Hamill Avenue, San Diego, CA 92103"], ["from_email", "moniquedestep@dayrep.com"], ["from_phone", "858-360-1802"], ["to_full_name", "Gladys H. Sheffield"], ["to_address", "1626 Hidden Meadow Drive, Des Lacs, ND 58733"], ["to_email", "gladyshsheffield@rhyta.com"], ["to_phone", "701-725-9343"], ["status", "sent"], ["discount", "8.25"], ["vat", "5.0"], ["created_at", "2020-04-10 11:18:22.669234"], ["updated_at", "2020-04-10 11:18:22.669234"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Carbonated Water - Cherry"], ["description", "Seamless transitional installation"], ["price", "34.83"], ["qty", 10], ["invoice_id", 8], ["created_at", "2020-04-10 11:18:22.671968"], ["updated_at", "2020-04-10 11:18:22.671968"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nestea - Ice Tea, Diet"], ["description", "Team-oriented logistical policy"], ["price", "50.7"], ["qty", 8], ["invoice_id", 8], ["created_at", "2020-04-10 11:18:22.675490"], ["updated_at", "2020-04-10 11:18:22.675490"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Rachelle S. Vargas"], ["from_address", "974 Haymond Rocks Road, Scottsburg, OR 97473"], ["from_email", "rachellesvargas@dayrep.com"], ["from_phone", "541-587-6332"], ["to_full_name", "Rachelle S. Vargas"], ["to_address", "974 Haymond Rocks Road, Scottsburg, OR 97473"], ["to_email", "rachellesvargas@dayrep.com"], ["to_phone", "541-587-6332"], ["status", "paid"], ["discount", "13.31"], ["vat", "15.0"], ["created_at", "2020-04-10 11:18:22.677704"], ["updated_at", "2020-04-10 11:18:22.677704"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Filter - Coffee"], ["description", "Up-sized actuating moratorium"], ["price", "33.75"], ["qty", 2], ["invoice_id", 9], ["created_at", "2020-04-10 11:18:22.680211"], ["updated_at", "2020-04-10 11:18:22.680211"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soupcontfoam16oz 116con"], ["description", "Customer-focused bandwidth-monitored architecture"], ["price", "22.27"], ["qty", 5], ["invoice_id", 9], ["created_at", "2020-04-10 11:18:22.682364"], ["updated_at", "2020-04-10 11:18:22.682364"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.3ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Soupcontfoam16oz 116con"], ["description", "Customer-focused bandwidth-monitored architecture"], ["price", "22.27"], ["qty", 5], ["invoice_id", 9], ["created_at", "2020-04-10 11:18:22.686022"], ["updated_at", "2020-04-10 11:18:22.686022"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mInvoice Create (0.3ms)[0m  [1m[32mINSERT INTO "invoices" ("from_full_name", "from_address", "from_email", "from_phone", "to_full_name", "to_address", "to_email", "to_phone", "status", "discount", "vat", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["from_full_name", "Marc S. Irizarry"], ["from_address", "4514 Big Elm, Richmond, MO 64085"], ["from_email", "marcsirizarry@jourrapide.com"], ["from_phone", "816-776-0200"], ["to_full_name", "Effie L. Goode"], ["to_address", "3889 Dogwood Lane, Tucson, AZ 85710"], ["to_email", "effielgoode@rhyta.com"], ["to_phone", "520-731-5031"], ["status", "paid"], ["discount", "1.75"], ["vat", "5.0"], ["created_at", "2020-04-10 11:18:22.688724"], ["updated_at", "2020-04-10 11:18:22.688724"]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:210
+  [1m[36mInvoiceItem Create (0.4ms)[0m  [1m[32mINSERT INTO "invoice_items" ("name", "description", "price", "qty", "invoice_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Carbonated Water - Cherry"], ["description", "Seamless transitional installation"], ["price", "34.83"], ["qty", 10], ["invoice_id", 10], ["created_at", "2020-04-10 11:18:22.691540"], ["updated_at", "2020-04-10 11:18:22.691540"]]
+  ↳ db/seeds.rb:210
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:210
+Started GET "/statistics/2" for ::1 at 2020-04-10 16:48:52 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by StatisticsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/statistics_controller.rb:98
+Completed 404 Not Found in 12ms (ActiveRecord: 3.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Statistic with 'id'=2):
+  
+app/controllers/statistics_controller.rb:98:in `set_statistic'
+Started GET "/statistics/new" for ::1 at 2020-04-10 16:48:55 +0530
+Processing by StatisticsController#new as HTML
+  Rendering statistics/new.html.erb within layouts/application
+  Rendered statistics/_form.html.erb (12.0ms)
+  Rendered statistics/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 878ms (Views: 868.9ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/statistics" for ::1 at 2020-04-10 16:49:13 +0530
+Processing by StatisticsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QsGtRLwWeZ750t3gM79Ut1dMerkt9r1ZpRY4kL1wrAFPVJl8EYLSnhEKGaIj04XmaH2Ba8pZJ2IRHlGORThtZA==", "statistic"=>{"no_of_treatments"=>"4", "no_of_samples"=>"5", "analytical_type"=>"sum", "excel_file"=>#<ActionDispatch::Http::UploadedFile:0x00007efd7e968db8 @tempfile=#<Tempfile:/tmp/RackMultipart20200410-27154-ivtz6j.xlsx>, @original_filename="statistics_excel.xlsx", @content_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", @headers="Content-Disposition: form-data; name=\"statistic[excel_file]\"; filename=\"statistics_excel.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n">}, "commit"=>"Create Statistic"}
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: Xv8g73NbwA42fvvYrVT9uLYV (checksum: Pi2JWj8qo1UDjvMbsdkg1w==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[36mActiveStorage::Blob Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "Xv8g73NbwA42fvvYrVT9uLYV"], ["filename", "statistics_excel.xlsx"], ["content_type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"], ["metadata", "{\"identified\":true}"], ["byte_size", 4492], ["checksum", "Pi2JWj8qo1UDjvMbsdkg1w=="], ["created_at", "2020-04-10 11:19:13.522039"]]
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[36mStatistic Create (0.5ms)[0m  [1m[32mINSERT INTO "statistics" ("no_of_treatments", "no_of_samples", "analytical_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["no_of_treatments", 4], ["no_of_samples", 5], ["analytical_type", "sum"], ["created_at", "2020-04-10 11:19:13.536522"], ["updated_at", "2020-04-10 11:19:13.536522"]]
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[36mActiveStorage::Attachment Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "excel_file"], ["record_type", "Statistic"], ["record_id", 1], ["blob_id", 1], ["created_at", "2020-04-10 11:19:13.538358"]]
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[36mStatistic Update (0.4ms)[0m  [1m[33mUPDATE "statistics" SET "updated_at" = $1 WHERE "statistics"."id" = $2[0m  [["updated_at", "2020-04-10 11:19:13.539887"], ["id", 1]]
+  ↳ app/controllers/statistics_controller.rb:45
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/statistics_controller.rb:45
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 5486302d-75da-4c65-a487-e65cc88f204a) to Async(default) with arguments: #<GlobalID:0x00007efd7e692e68 @uri=#<URI::GID gid://statistic-analysis-pjtsau/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/statistics/1
+Completed 302 Found in 52ms (ActiveRecord: 9.3ms)
+
+
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a] Performing ActiveStorage::AnalyzeJob (Job ID: 5486302d-75da-4c65-a487-e65cc88f204a) from Async(default) with arguments: #<GlobalID:0x00007efd7e66ce98 @uri=#<URI::GID gid://statistic-analysis-pjtsau/ActiveStorage::Blob/1>>
+Started GET "/statistics/1" for ::1 at 2020-04-10 16:49:13 +0530
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a]   [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a]   [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+Processing by StatisticsController#show as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Parameters: {"id"=>"1"}
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a]   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a]   ↳ /home/coppernine01/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  ↳ app/controllers/statistics_controller.rb:98
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5486302d-75da-4c65-a487-e65cc88f204a] Performed ActiveStorage::AnalyzeJob (Job ID: 5486302d-75da-4c65-a487-e65cc88f204a) from Async(default) in 7.83ms
+  ↳ app/controllers/statistics_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Statistic"], ["name", "excel_file"], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/statistic.rb:8
+  Rendering statistics/show.html.erb within layouts/application
+  Rendered statistics/show.html.erb within layouts/application (0.8ms)
+  [1m[36mCACHE Statistic Load (0.0ms)[0m  [1m[34mSELECT  "statistics".* FROM "statistics" WHERE "statistics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/_header.html.erb:17
+  Rendered layouts/shared/_header.html.erb (1.1ms)
+Completed 200 OK in 41ms (Views: 21.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/statistics" for ::1 at 2020-04-10 16:49:22 +0530
+Processing by StatisticsController#index as HTML
+  Rendering statistics/index.html.erb within layouts/application
+  [1m[36mStatistic Load (0.3ms)[0m  [1m[34mSELECT "statistics".* FROM "statistics"[0m
+  ↳ app/views/statistics/index.html.erb:16
+  Rendered statistics/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/shared/_header.html.erb (0.5ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
