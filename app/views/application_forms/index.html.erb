@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Application Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mobile number</th>
+      <th>Application number</th>
+      <th>Hall ticket number</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Date of birth</th>
+      <th>Age</th>
+      <th>Aadhaar number</th>
+      <th>Blood group</th>
+      <th>Mother name</th>
+      <th>Father name</th>
+      <th>Mobile number1</th>
+      <th>Mobile number2</th>
+      <th>Email</th>
+      <th>Social status</th>
+      <th>Religion</th>
+      <th>Nationality</th>
+      <th>Physically challenged</th>
+      <th>Address</th>
+      <th>State</th>
+      <th>Pincode</th>
+      <th>Place of study vi to xii</th>
+      <th>Physically challenged category</th>
+      <th>Sports category</th>
+      <th>Defence category</th>
+      <th>Ncc category</th>
+      <th>Farmers quota</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @application_forms.each do |application_form| %>
+      <tr>
+        <td><%= application_form.mobile_number %></td>
+        <td><%= application_form.application_number %></td>
+        <td><%= application_form.hall_ticket_number %></td>
+        <td><%= application_form.rank %></td>
+        <td><%= application_form.name %></td>
+        <td><%= application_form.gender %></td>
+        <td><%= application_form.date_of_birth %></td>
+        <td><%= application_form.age %></td>
+        <td><%= application_form.aadhaar_number %></td>
+        <td><%= application_form.blood_group %></td>
+        <td><%= application_form.mother_name %></td>
+        <td><%= application_form.father_name %></td>
+        <td><%= application_form.mobile_number1 %></td>
+        <td><%= application_form.mobile_number2 %></td>
+        <td><%= application_form.email %></td>
+        <td><%= application_form.social_status %></td>
+        <td><%= application_form.religion %></td>
+        <td><%= application_form.nationality %></td>
+        <td><%= application_form.physically_challenged %></td>
+        <td><%= application_form.address %></td>
+        <td><%= application_form.state %></td>
+        <td><%= application_form.pincode %></td>
+        <td><%= application_form.place_of_study_vi_to_xii %></td>
+        <td><%= application_form.physically_challenged_category %></td>
+        <td><%= application_form.sports_category %></td>
+        <td><%= application_form.defence_category %></td>
+        <td><%= application_form.ncc_category %></td>
+        <td><%= application_form.farmers_quota %></td>
+        <td><%= link_to 'Show', application_form %></td>
+        <td><%= link_to 'Edit', edit_application_form_path(application_form) %></td>
+        <td><%= link_to 'Destroy', application_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Application Form', new_application_form_path %>

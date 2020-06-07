@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'statistics#index'
+  resources :application_forms
+  root to: 'application_forms#index'
 
   resources :invoices, only: [:index, :show]
 

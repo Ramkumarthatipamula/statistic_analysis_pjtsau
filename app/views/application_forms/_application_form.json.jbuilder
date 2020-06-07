@@ -1,0 +1,2 @@
+json.extract! application_form, :id, :mobile_number, :application_number, :hall_ticket_number, :rank, :name, :gender, :date_of_birth, :age, :aadhaar_number, :blood_group, :mother_name, :father_name, :mobile_number1, :mobile_number2, :email, :social_status, :religion, :nationality, :physically_challenged, :address, :state, :pincode, :place_of_study_vi_to_xii, :physically_challenged_category, :sports_category, :defence_category, :ncc_category, :farmers_quota, :created_at, :updated_at
+json.url application_form_url(application_form, format: :json)

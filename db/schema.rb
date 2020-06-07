@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_10_102241) do
+ActiveRecord::Schema.define(version: 2020_06_07_143954) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,39 @@ ActiveRecord::Schema.define(version: 2020_04_10_102241) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "application_forms", force: :cascade do |t|
+    t.string "mobile_number"
+    t.string "application_number"
+    t.string "hall_ticket_number"
+    t.integer "rank"
+    t.string "name"
+    t.string "gender"
+    t.date "date_of_birth"
+    t.integer "age"
+    t.string "aadhaar_number"
+    t.string "blood_group"
+    t.string "mother_name"
+    t.string "father_name"
+    t.string "mobile_number1"
+    t.string "mobile_number2"
+    t.string "email"
+    t.string "social_status"
+    t.string "religion"
+    t.string "nationality"
+    t.boolean "physically_challenged"
+    t.string "address"
+    t.string "state"
+    t.string "pincode"
+    t.string "place_of_study_vi_to_xii"
+    t.string "physically_challenged_category"
+    t.string "sports_category"
+    t.string "defence_category"
+    t.string "ncc_category"
+    t.string "farmers_quota"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "invoice_items", force: :cascade do |t|

@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mobile_number: MyString
+  application_number: MyString
+  hall_ticket_number: MyString
+  rank: 1
+  name: MyString
+  gender: MyString
+  date_of_birth: 2020-06-07
+  age: 1
+  aadhaar_number: MyString
+  blood_group: MyString
+  mother_name: MyString
+  father_name: MyString
+  mobile_number1: MyString
+  mobile_number2: MyString
+  email: MyString
+  social_status: MyString
+  religion: MyString
+  nationality: MyString
+  physically_challenged: false
+  address: MyString
+  state: MyString
+  pincode: MyString
+  place_of_study_vi_to_xii: MyString
+  physically_challenged_category: MyString
+  sports_category: MyString
+  defence_category: MyString
+  ncc_category: MyString
+  farmers_quota: MyString
+
+two:
+  mobile_number: MyString
+  application_number: MyString
+  hall_ticket_number: MyString
+  rank: 1
+  name: MyString
+  gender: MyString
+  date_of_birth: 2020-06-07
+  age: 1
+  aadhaar_number: MyString
+  blood_group: MyString
+  mother_name: MyString
+  father_name: MyString
+  mobile_number1: MyString
+  mobile_number2: MyString
+  email: MyString
+  social_status: MyString
+  religion: MyString
+  nationality: MyString
+  physically_challenged: false
+  address: MyString
+  state: MyString
+  pincode: MyString
+  place_of_study_vi_to_xii: MyString
+  physically_challenged_category: MyString
+  sports_category: MyString
+  defence_category: MyString
+  ncc_category: MyString
+  farmers_quota: MyString
