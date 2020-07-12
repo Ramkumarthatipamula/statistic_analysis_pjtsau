@@ -5,155 +5,300 @@
 
       <ul>
       <% application_form.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <!-- <li><%#= message %></li> -->
+        <div class="alert alert-danger d-none"><%= message %></div>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= form.label :mobile_number, class: "col-md-4 control-label" %>
-    <div class="col-md-8">
-      <%= form.text_field :mobile_number, class: "form-control" %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Mobile No</label>
+    <div class="col-sm-9">
+      <%= form.text_field :mobile_number, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
     </div>
   </div>
 
-  <div class="field">
-    <%= form.label :application_number %>
-    <%= form.text_field :application_number %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Application number</label>
+    <div class="col-sm-9">
+      <%= form.text_field :application_number, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :hall_ticket_number %>
-    <%= form.text_field :hall_ticket_number %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Hall ticket number</label>
+    <div class="col-sm-9">
+      <%= form.text_field :hall_ticket_number, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :rank %>
-    <%= form.number_field :rank %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Rank</label>
+    <div class="col-sm-9">
+      <%= form.number_field :rank, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Name</label>
+    <div class="col-sm-9">
+      <%= form.text_field :name, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :gender %>
-    <%= form.text_field :gender %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Gender</label>
+    <div class="col-sm-9">
+      <%= form.text_field :gender, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :date_of_birth %>
-    <%= form.date_select :date_of_birth %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Date of birth</label>
+    <div class="col-sm-9">
+      <%= form.date_select :date_of_birth, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :age %>
-    <%= form.number_field :age %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Age</label>
+    <div class="col-sm-9">
+      <%= form.number_field :age, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :aadhaar_number %>
-    <%= form.text_field :aadhaar_number %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Aadhaar number</label>
+    <div class="col-sm-9">
+      <%= form.text_field :aadhaar_number, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :blood_group %>
-    <%= form.text_field :blood_group %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Blood group</label>
+    <div class="col-sm-9">
+      <%= form.text_field :blood_group, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :mother_name %>
-    <%= form.text_field :mother_name %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Mother name</label>
+    <div class="col-sm-9">
+      <%= form.text_field :mother_name, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :father_name %>
-    <%= form.text_field :father_name %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Father name</label>
+    <div class="col-sm-9">
+      <%= form.text_field :father_name, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :mobile_number1 %>
-    <%= form.text_field :mobile_number1 %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Mobile number1</label>
+    <div class="col-sm-9">
+      <%= form.text_field :mobile_number1, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :mobile_number2 %>
-    <%= form.text_field :mobile_number2 %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Mobile number2</label>
+    <div class="col-sm-9">
+      <%= form.text_field :mobile_number2, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Email</label>
+    <div class="col-sm-9">
+      <%= form.text_field :email, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :social_status %>
-    <%= form.text_field :social_status %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Social status</label>
+    <div class="col-sm-9">
+      <%= form.text_field :social_status, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :religion %>
-    <%= form.text_field :religion %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Religion</label>
+    <div class="col-sm-9">
+      <%= form.text_field :religion, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :nationality %>
-    <%= form.text_field :nationality %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Nationality</label>
+    <div class="col-sm-9">
+      <%= form.text_field :nationality, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :physically_challenged %>
-    <%= form.check_box :physically_challenged %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Physically challenged</label>
+    <div class="col-sm-9">
+      <%= form.check_box :physically_challenged, class: '' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Address</label>
+    <div class="col-sm-9">
+      <%= form.text_field :address, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :state %>
-    <%= form.text_field :state %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">State</label>
+    <div class="col-sm-9">
+      <%= form.text_field :state, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :pincode %>
-    <%= form.text_field :pincode %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Pincode</label>
+    <div class="col-sm-9">
+      <%= form.text_field :pincode, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :place_of_study_vi_to_xii %>
-    <%= form.text_field :place_of_study_vi_to_xii %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Place of study vi to xii</label>
+    <div class="col-sm-9">
+      <%= form.text_field :place_of_study_vi_to_xii, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :physically_challenged_category %>
-    <%= form.text_field :physically_challenged_category %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Physically challenged category</label>
+    <div class="col-sm-9">
+      <%= form.text_field :physically_challenged_category, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :sports_category %>
-    <%= form.text_field :sports_category %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Sports category</label>
+    <div class="col-sm-9">
+      <%= form.text_field :sports_category, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :defence_category %>
-    <%= form.text_field :defence_category %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Defence category</label>
+    <div class="col-sm-9">
+      <%= form.text_field :defence_category, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :ncc_category %>
-    <%= form.text_field :ncc_category %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Ncc category</label>
+    <div class="col-sm-9">
+      <%= form.text_field :ncc_category, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :farmers_quota %>
-    <%= form.text_field :farmers_quota %>
+  <div class="form-group row">
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Farmers quota</label>
+    <div class="col-sm-9">
+      <%= form.text_field :farmers_quota, class: 'form-control' %>
+      <div class="invalid-feedback">Mobile number can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- <small class="form-text text-muted">Text input example</small> -->
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group row mb-0">
+    <div class="col-sm-9 offset-sm-3">
+      <button type="submit" class="btn btn-primary">Apply Application!</button>
+      <%= link_to 'Back', application_forms_path, class: "btn btn-outline-secondary" %>
+
+      <!-- <button type="reset" class="btn btn-outline-secondary">Cancel</button> -->
+    </div>
   </div>
+
 <% end %>

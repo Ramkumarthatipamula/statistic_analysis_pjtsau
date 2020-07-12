@@ -28,7 +28,7 @@ class ApplicationFormsController < ApplicationController
 
     respond_to do |format|
       if @application_form.save
-        format.html { redirect_to @application_form, notice: 'Application form was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Application form was successfully created.' }
         format.json { render :show, status: :created, location: @application_form }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ApplicationFormsController < ApplicationController
   def update
     respond_to do |format|
       if @application_form.update(application_form_params)
-        format.html { redirect_to @application_form, notice: 'Application form was successfully updated.' }
+        format.html { redirect_to root_path, notice: 'Application form was successfully updated.' }
         format.json { render :show, status: :ok, location: @application_form }
       else
         format.html { render :edit }

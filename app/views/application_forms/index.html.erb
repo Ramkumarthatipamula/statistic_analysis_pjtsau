@@ -1,7 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Application Forms</h1>
+<table id="adding_datatable" class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <% @application_forms.each do |garage| %>
+    <tr>
+      <td><%= garage.name %></td>
+      <td><%= garage.address %></td>
+      <td><%= garage.email %></td>
+      <td><%= link_to 'Show', garage, class: 'btn btn-info' %>
+      <%= link_to 'Edit', edit_application_form_path(garage), class: 'btn btn-info' %>
+      <%= link_to 'Destroy', garage, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-info' %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
 <table>
   <thead>
     <tr>
@@ -79,3 +101,11 @@
 <br>
 
 <%= link_to 'New Application Form', new_application_form_path %>
+
+<script>
+$(document).ready(function () {
+  $('#adding_datatable').DataTable({
+    "bPaginate": true,
+  });
+});
+</script>
