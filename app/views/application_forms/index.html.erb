@@ -1,30 +1,48 @@
-<p id="notice"><%= notice %></p>
+<div class="invoice-box">
 
-<h1>Application Forms</h1>
-<table id="adding_datatable" class="table table-bordered table-condensed">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>Email</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
+  <p id="notice"><%= notice %></p>
+  <div class="row">
+    <label for="exampleInputName" class="col-sm-5"><h1>Applications list</h1></label>
+    <div class="col-sm-7" style="text-align: right;">
+      <%= link_to ' + New Application Form', new_application_form_path, class: 'btn btn-info text-align-right' %>
+      <%= link_to "Download to CSV", application_forms_path(format: "csv"), :class => "btn btn-info" %>
+      <%= link_to "Download to Excel", application_forms_path(format: "xls"), :class => "btn btn-info" %>
+    </div>
+  </div><br>
+  <%#= link_to 'Edit', edit_application_form_path(application_form), class: 'btn btn-info' %>
+  <table id="adding_datatable" class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Application no</th>
+        <th>H no</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile number</th>
+        <th>Address</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
 
-  <tbody>
-    <% @application_forms.each do |garage| %>
-    <tr>
-      <td><%= garage.name %></td>
-      <td><%= garage.address %></td>
-      <td><%= garage.email %></td>
-      <td><%= link_to 'Show', garage, class: 'btn btn-info' %>
-      <%= link_to 'Edit', edit_application_form_path(garage), class: 'btn btn-info' %>
-      <%= link_to 'Destroy', garage, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-info' %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
-<table>
+    <tbody>
+      <% @application_forms.each do |application_form| %>
+      <tr>
+        <td><%= application_form.rank %></td>
+        <td><%= application_form.application_number %></td>
+        <td><%= application_form.hall_ticket_number %></td>
+        <td><%= application_form.name %></td>
+        <td><%= application_form.email %></td>
+        <td><%= application_form.mobile_number1 %></td>
+        <td><%= application_form.address %></td>
+        <td><%= link_to 'Show', application_form, class: 'btn btn-info' %>
+        <%= link_to 'Edit', edit_application_form_path(application_form), class: 'btn btn-info' %>
+        <%= link_to 'Destroy', application_form, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-info' %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<!-- <table>
   <thead>
     <tr>
       <th>Mobile number</th>
@@ -60,47 +78,43 @@
   </thead>
 
   <tbody>
-    <% @application_forms.each do |application_form| %>
+    <%# @application_forms.each do |application_form| %>
       <tr>
-        <td><%= application_form.mobile_number %></td>
-        <td><%= application_form.application_number %></td>
-        <td><%= application_form.hall_ticket_number %></td>
-        <td><%= application_form.rank %></td>
-        <td><%= application_form.name %></td>
-        <td><%= application_form.gender %></td>
-        <td><%= application_form.date_of_birth %></td>
-        <td><%= application_form.age %></td>
-        <td><%= application_form.aadhaar_number %></td>
-        <td><%= application_form.blood_group %></td>
-        <td><%= application_form.mother_name %></td>
-        <td><%= application_form.father_name %></td>
-        <td><%= application_form.mobile_number1 %></td>
-        <td><%= application_form.mobile_number2 %></td>
-        <td><%= application_form.email %></td>
-        <td><%= application_form.social_status %></td>
-        <td><%= application_form.religion %></td>
-        <td><%= application_form.nationality %></td>
-        <td><%= application_form.physically_challenged %></td>
-        <td><%= application_form.address %></td>
-        <td><%= application_form.state %></td>
-        <td><%= application_form.pincode %></td>
-        <td><%= application_form.place_of_study_vi_to_xii %></td>
-        <td><%= application_form.physically_challenged_category %></td>
-        <td><%= application_form.sports_category %></td>
-        <td><%= application_form.defence_category %></td>
-        <td><%= application_form.ncc_category %></td>
-        <td><%= application_form.farmers_quota %></td>
-        <td><%= link_to 'Show', application_form %></td>
-        <td><%= link_to 'Edit', edit_application_form_path(application_form) %></td>
-        <td><%= link_to 'Destroy', application_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= application_form.mobile_number %></td>
+        <td><%#= application_form.application_number %></td>
+        <td><%#= application_form.hall_ticket_number %></td>
+        <td><%#= application_form.rank %></td>
+        <td><%#= application_form.name %></td>
+        <td><%#= application_form.gender %></td>
+        <td><%#= application_form.date_of_birth %></td>
+        <td><%#= application_form.age %></td>
+        <td><%#= application_form.aadhaar_number %></td>
+        <td><%#= application_form.blood_group %></td>
+        <td><%#= application_form.mother_name %></td>
+        <td><%#= application_form.father_name %></td>
+        <td><%#= application_form.mobile_number1 %></td>
+        <td><%#= application_form.mobile_number2 %></td>
+        <td><%#= application_form.email %></td>
+        <td><%#= application_form.social_status %></td>
+        <td><%#= application_form.religion %></td>
+        <td><%#= application_form.nationality %></td>
+        <td><%#= application_form.physically_challenged %></td>
+        <td><%#= application_form.address %></td>
+        <td><%#= application_form.state %></td>
+        <td><%#= application_form.pincode %></td>
+        <td><%#= application_form.place_of_study_vi_to_xii %></td>
+        <td><%#= application_form.physically_challenged_category %></td>
+        <td><%#= application_form.sports_category %></td>
+        <td><%#= application_form.defence_category %></td>
+        <td><%#= application_form.ncc_category %></td>
+        <td><%#= application_form.farmers_quota %></td>
+        <td><%#= link_to 'Show', application_form %></td>
+        <td><%#= link_to 'Edit', edit_application_form_path(application_form) %></td>
+        <td><%#= link_to 'Destroy', application_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+    <%# end %>
   </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Application Form', new_application_form_path %>
+</table> -->
 
 <script>
 $(document).ready(function () {

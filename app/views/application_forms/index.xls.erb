@@ -1,0 +1,68 @@
+<table border="1">
+  <tr>
+    <th>mobile_number</th>
+    <th>application_number</th>
+    <th>hall_ticket_number</th>
+    <th>rank</th>
+    <th>name</th>
+    <th>gender</th>
+    <th>date_of_birth</th>
+    <th>age</th>
+    <th>aadhaar_number</th>
+    <th>blood_group</th>
+    <th>mother_name</th>
+    <th>father_name</th>
+    <th>mobile_number1</th>
+    <th>mobile_number2</th>
+    <th>email</th>
+    <th>social_status</th>
+    <th>religion</th>
+    <th>nationality</th>
+    <th>physically_challenged</th>
+    <th>address</th>
+    <th>state</th>
+    <th>pincode</th>
+    <th>place_of_study_vi_to_xii</th>
+    <th>physically_challenged_category</th>
+    <th>sports_category</th>
+    <th>defence_category</th>
+    <th>ncc_category</th>
+    <th>farmers_quota</th>
+    <th>created_at</th>
+    <th>updated_at</th>>
+  </tr>
+  <% @application_forms.each do |application_form| %>
+  <tr>
+    <td><%= application_form.mobile_number %></td>
+    <td><%= application_form.application_number %></td>
+    <td><%= application_form.hall_ticket_number %></td>
+    <td><%= application_form.rank %></td>
+    <td><%= application_form.name %></td>
+    <td><%= application_form.gender %></td>
+    <td><%= application_form.date_of_birth %></td>
+    <td><%= application_form.age %></td>
+    <td><%= application_form.aadhaar_number %></td>
+    <td><%= application_form.blood_group %></td>
+    <td><%= application_form.mother_name %></td>
+    <td><%= application_form.father_name %></td>
+    <td><%= application_form.mobile_number1 %></td>
+    <td><%= application_form.mobile_number2 %></td>
+    <td><%= application_form.email %></td>
+    <td><%= application_form.social_status %></td>
+    <td><%= application_form.religion %></td>
+    <td><%= application_form.nationality %></td>
+    <td><%= application_form.physically_challenged %></td>
+    <td><%= application_form.address %></td>
+    <td><%= application_form.state %></td>
+    <td><%= application_form.pincode %></td>
+    <td><%= application_form.place_of_study_vi_to_xii %></td>
+    <td><%= application_form.physically_challenged_category %></td>
+    <td><%= application_form.sports_category %></td>
+    <td><%= application_form.defence_category %></td>
+    <td><%= application_form.ncc_category %></td>
+    <td><%= application_form.farmers_quota %></td>
+    <td><%= application_form.created_at %></td>
+    <td><%= application_form.updated_at %></td>
+  </tr>
+  <% end %>
+</table>

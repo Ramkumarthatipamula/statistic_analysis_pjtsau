@@ -5,6 +5,11 @@ class ApplicationFormsController < ApplicationController
   # GET /application_forms.json
   def index
     @application_forms = ApplicationForm.all
+    respond_to do |format|
+      format.html
+      format.csv { send_data @application_forms.to_csv, filename: "application_forms-#{Date.today}.csv" }
+      format.xls
+    end
   end
 
   # GET /application_forms/1
