@@ -1,48 +1,58 @@
 <div class="invoice-box">
-
   <p id="notice"><%= notice %></p>
-  <div class="row">
-    <label for="exampleInputName" class="col-sm-5"><h1>Applications list</h1></label>
-    <div class="col-sm-7" style="text-align: right;">
-      <%= link_to ' + New Application Form', new_application_form_path, class: 'btn btn-info text-align-right' %>
-      <% if current_user.email == "admin@pjtsau.com" %>
+
+  <%#= link_to 'Edit', edit_application_form_path(application_form), class: 'btn btn-info' %>
+  <% if current_user.email == "admin@pjtsau.com" %>
+    <div class="row">
+      <label for="exampleInputName" class="col-sm-5"><h1>Applications list</h1></label>
+      <div class="col-sm-7" style="text-align: right;">
         <%= link_to "Download to CSV", application_forms_path(format: "csv"), :class => "btn btn-info" %>
         <%= link_to "Download to Excel", application_forms_path(format: "xls"), :class => "btn btn-info" %>
-      <% end %>
+      </div>
     </div>
-  </div><br>
-  <%#= link_to 'Edit', edit_application_form_path(application_form), class: 'btn btn-info' %>
-  <table id="adding_datatable" class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Rank</th>
-        <th>Application no</th>
-        <th>H no</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Mobile number</th>
-        <th>Address</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
+    <table id="adding_datatable" class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Application no</th>
+          <th>H no</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile number</th>
+          <th>Address</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
 
-    <tbody>
-      <% @application_forms.each do |application_form| %>
-      <tr>
-        <td><%= application_form.rank %></td>
-        <td><%= application_form.application_number %></td>
-        <td><%= application_form.hall_ticket_number %></td>
-        <td><%= application_form.name %></td>
-        <td><%= application_form.email %></td>
-        <td><%= application_form.mobile_number1 %></td>
-        <td><%= application_form.address %></td>
-        <td><%= link_to 'Show', application_form, class: 'btn btn-info' %>
-        <%= link_to 'Edit', edit_application_form_path(application_form), class: 'btn btn-info' %>
-        <%= link_to 'Destroy', application_form, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-info' %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+      <tbody>
+        <% @application_forms.each do |application_form| %>
+        <tr>
+          <td><%= application_form.rank %></td>
+          <td><%= application_form.application_number %></td>
+          <td><%= application_form.hall_ticket_number %></td>
+          <td><%= application_form.name %></td>
+          <td><%= application_form.email %></td>
+          <td><%= application_form.mobile_number1 %></td>
+          <td><%= application_form.address %></td>
+          <td><%= link_to 'Show', application_form, class: 'btn btn-info' %>
+          <%= link_to 'Edit', edit_application_form_path(application_form), class: 'btn btn-info' %>
+          <%= link_to 'Destroy', application_form, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-info' %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table><br>
+  <% else %>
+    <div class="row">
+      <div class="col-sm-12" style="text-align: center;">
+        <%= link_to ' + New Application Form', new_application_form_path, class: 'btn btn-primary' %>
+        <%= link_to "NOTIFICATION", 'schedule.pdf', :class => "btn btn-info", target: '_blank' %>
+        <%= link_to "PROSPECTUS", 'prospectus.pdf', :class => "btn btn-info", target: '_blank' %>
+        <%= link_to "FORM-I", 'form_1.pdf', :class => "btn btn-info", target: '_blank' %>
+        <%= link_to "FORM-II", 'form_2.pdf', :class => "btn btn-info", target: '_blank' %>
+        <%= link_to "INSTRUCTIONS", 'Instructions_for_applicants.pdf', :class => "btn btn-info", target: '_blank' %>
+      </div>
+    </div><br>
+  <% end %>
 </div>
 <!-- <table>
   <thead>

@@ -7,7 +7,7 @@ class ApplicationFormsController < ApplicationController
     if current_user.email == "admin@pjtsau.com"
       @application_forms = ApplicationForm.all
     else
-      @application_forms = current_user.application_forms
+      # @application_forms = current_user.application_forms
     end
     respond_to do |format|
       format.html

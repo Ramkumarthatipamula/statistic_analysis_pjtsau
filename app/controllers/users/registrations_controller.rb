@@ -18,6 +18,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       resource.name = params[:user][:name]
       resource.mobile_number = params[:user][:mobile_number]
       if resource.save
+        set_flash_message! :notice, :"You are successfully signed up, Sign in for continue.."
         redirect_to destroy_user_session_path
       end
     else
