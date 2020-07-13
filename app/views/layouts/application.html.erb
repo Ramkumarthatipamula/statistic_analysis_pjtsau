@@ -3,10 +3,11 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>PDFs | Ruby on Rails</title>
+    <title>PJTSAU</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <title>PJTSAU</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,8 +16,26 @@
 
   <body>
     <%#= render "layouts/shared/header" %>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
     <div class="container mt-3">
       <%= yield %>
+    </div>
+    <div class="container">
+      <p class="navbar-text float-right">
+        <% if user_signed_in? %>
+          Logged in as <strong><%= current_user.email %></strong>.
+          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+        <% else %>
+          <%#= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> 
+          <%#= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+        <% end %>
+      </p>
     </div>
   </body>
 </html>

@@ -4,7 +4,11 @@ class ApplicationFormsController < ApplicationController
   # GET /application_forms
   # GET /application_forms.json
   def index
-    @application_forms = ApplicationForm.all
+    if current_user.email == "admin@pjtsau.com"
+      @application_forms = ApplicationForm.all
+    else
+      @application_forms = current_user.application_forms
+    end
     respond_to do |format|
       format.html
       format.csv { send_data @application_forms.to_csv, filename: "application_forms-#{Date.today}.csv" }
@@ -30,7 +34,7 @@ class ApplicationFormsController < ApplicationController
   # POST /application_forms.json
   def create
     @application_form = ApplicationForm.new(application_form_params)
-
+    @application_form.user_id = current_user.id
     respond_to do |format|
       if @application_form.save
         format.html { redirect_to root_path, notice: 'Application form was successfully created.' }
@@ -45,6 +49,7 @@ class ApplicationFormsController < ApplicationController
   # PATCH/PUT /application_forms/1
   # PATCH/PUT /application_forms/1.json
   def update
+    @application_form.user_id = current_user.id
     respond_to do |format|
       if @application_form.update(application_form_params)
         format.html { redirect_to root_path, notice: 'Application form was successfully updated.' }

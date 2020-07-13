@@ -5,8 +5,10 @@
     <label for="exampleInputName" class="col-sm-5"><h1>Applications list</h1></label>
     <div class="col-sm-7" style="text-align: right;">
       <%= link_to ' + New Application Form', new_application_form_path, class: 'btn btn-info text-align-right' %>
-      <%= link_to "Download to CSV", application_forms_path(format: "csv"), :class => "btn btn-info" %>
-      <%= link_to "Download to Excel", application_forms_path(format: "xls"), :class => "btn btn-info" %>
+      <% if current_user.email == "admin@pjtsau.com" %>
+        <%= link_to "Download to CSV", application_forms_path(format: "csv"), :class => "btn btn-info" %>
+        <%= link_to "Download to Excel", application_forms_path(format: "xls"), :class => "btn btn-info" %>
+      <% end %>
     </div>
   </div><br>
   <%#= link_to 'Edit', edit_application_form_path(application_form), class: 'btn btn-info' %>
